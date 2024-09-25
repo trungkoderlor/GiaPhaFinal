@@ -1,0 +1,53 @@
+
+/* Đặt màu nền cho AnchorPane */
+AnchorPane {
+    -fx-background-color: #f0f4f8;
+}
+
+/* Hiệu ứng chuyển màu (gradient) cho AnchorPane */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #f0f4f8, #d0e4f9);
+}
+
+/* Các nút (Button) */
+Button {
+    -fx-cursor: hand; /* Con trỏ chuột dạng bàn tay */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 3, 3); /* Hiệu ứng đổ bóng */
+
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 10 15;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 5, 5);
+    -fx-transition: background-color 0.3s, scale 0.3s; /* Hiệu ứng chuyển đổi màu và kích thước */
+}
+
+Button:hover {
+    -fx-background-color: #ff6f61;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Các trường nhập liệu (TextField, ChoiceBox, Spinner) */
+TextField, ChoiceBox, Spinner {
+    -fx-background-color: white;
+    -fx-border-color: #1a73e8;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 6;
+    -fx-focus-color: #1a73e8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 3, 3);
+}
+
+
+
+/* Các nhãn (Label) */
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #3c4043;
+}
+
+/* Đặt hiệu ứng đổ bóng cho các ImageView */

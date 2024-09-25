@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="1.1462000000000003" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerSample">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: black;">
+         <children>
+            <Button layoutX="36.0" layoutY="137.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: orange;" text="Thêm " textFill="#f8f5f5" />
+            <Button layoutX="36.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: yellow;" text="Tìm Kiếm" textFill="#141010" />
+            <Button layoutX="36.0" layoutY="203.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: blue;" text="Xóa" textFill="#ede9e9" />
+            <Button layoutX="36.0" layoutY="73.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: green;" text="Hiển Thị Cây" textFill="#e2e1e1" />
+         </children></AnchorPane>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="600.0" prefHeight="397.0" prefWidth="648.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="40.0" prefHeight="397.3333333333333" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="idTV" prefWidth="55.33336389064789" text="ID" />
+                <TableColumn fx:id="ten" prefWidth="97.33331680297852" text="Họ Và Tên" />
+                  <TableColumn fx:id="namSinh" prefWidth="66.00006103515625" text="Năm Sinh" />
+                  <TableColumn fx:id="gioitinh" minWidth="0.66668701171875" prefWidth="67.66668701171875" text="Giới Tính" />
+                  <TableColumn fx:id="anh" prefWidth="48.66668701171875" text="Link Ảnh" visible="false" />
+                  <TableColumn fx:id="tenBo" prefWidth="96.0" text="Tên Bố" />
+                  <TableColumn fx:id="idBo" prefWidth="46.666656494140625" text="ID Bố" visible="false" />
+                  <TableColumn fx:id="tenMe" prefWidth="90.6666259765625" text="Tên Mẹ" />
+                  <TableColumn fx:id="idMe" prefWidth="36.666656494140625" text="ID Mẹ" visible="false" />
+                  <TableColumn fx:id="idVc" prefWidth="72.6666259765625" text="ID Vợ /Chồng" visible="false" />
+                  <TableColumn fx:id="tenVc" prefWidth="114.6666259765625" text="Tên Vợ/Chồng" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

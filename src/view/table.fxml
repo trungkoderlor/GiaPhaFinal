@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.21046420141620775" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" stylesheets="@styleHome.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerTable">
+  <items>
+    <AnchorPane id="An1" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="166.0" style="-fx-background-color: #4793AF;" stylesheets="@styleButton.css">
+         <children>
+            <Button fx:id="addbtn" layoutX="43.0" layoutY="146.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #795458;" stylesheets="@styleButton.css" text="Thêm " textFill="#100000" />
+            <Button fx:id="relations" layoutX="43.0" layoutY="228.0" mnemonicParsing="false" onAction="#relations_click" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: blue;" stylesheets="@styleButton.css" text="Xem Quan Hệ" textFill="#ede9e9" />
+            <Button fx:id="show" layoutX="43.0" layoutY="65.0" mnemonicParsing="false" onAction="#showDiagram" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: green;" stylesheets="@styleButton.css" text="Hiển Thị Cây" textFill="#e2e1e1" />
+            <Button fx:id="update" layoutX="43.0" layoutY="312.0" mnemonicParsing="false" onAction="#updatedata" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #496989;" text="Cập Nhật" textFill="#fffcfc" />
+         </children></AnchorPane>
+    <AnchorPane id="An2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="600.0" prefHeight="397.0" prefWidth="648.0" style="-fx-background-color: #FFFAB7;">
+         <children>
+            <TableView fx:id="tableView" layoutY="81.0" prefHeight="316.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+              <columns>
+                <TableColumn fx:id="idTV" prefWidth="47.33336389064789" text="ID" />
+                <TableColumn fx:id="ten" prefWidth="97.33331680297852" text="Họ Và Tên" />
+                  <TableColumn fx:id="namSinh" prefWidth="66.00006103515625" text="Năm Sinh" />
+                  <TableColumn fx:id="gioitinh" minWidth="0.66668701171875" prefWidth="54.66668701171875" text="Giới Tính" />
+                  <TableColumn fx:id="anh" prefWidth="48.66668701171875" text="Link Ảnh" visible="false" />
+                  <TableColumn fx:id="tenBo" prefWidth="96.0" text="Tên Bố" />
+                  <TableColumn fx:id="idBo" prefWidth="46.666656494140625" text="ID Bố" visible="false" />
+                  <TableColumn fx:id="tenMe" prefWidth="90.6666259765625" text="Tên Mẹ" />
+                  <TableColumn fx:id="idMe" prefWidth="36.666656494140625" text="ID Mẹ" visible="false" />
+                  <TableColumn fx:id="idVc" prefWidth="72.6666259765625" text="ID Vợ /Chồng" visible="false" />
+                  <TableColumn fx:id="tenVc" prefWidth="105.6666259765625" text="Tên Vợ/Chồng" />
+                  <TableColumn fx:id="actionColumn" prefWidth="83.0" />
+              </columns>
+               <stylesheets>
+                  <URL value="@styleTable.css" />
+                  <URL value="@styleButton.css" />
+               </stylesheets>
+            </TableView>
+            <Text layoutX="219.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành Viên Gia Phả" underline="true" wrappingWidth="291.99995930989587">
+               <font>
+                  <Font name="Candara Bold Italic" size="35.0" />
+               </font>
+            </Text>
+            <Polyline fill="#ebebeb" layoutX="372.0" layoutY="64.0" points="107.66665649414062, -24.666667938232422, 41.666656494140625, -24.666667938232422, -17.333343505859375, -5.999992370605469, -78.33334350585938, -24.666667938232422" strokeType="INSIDE" />
+            <Line endX="176.00003051757812" endY="-10.666664123535156" layoutX="326.0" layoutY="50.0" startX="-106.99998474121094" startY="-10.666664123535156" />
+            <TextField fx:id="searchField" layoutX="466.0" layoutY="49.0" prefHeight="25.0" prefWidth="186.0" />
+            <Text layoutX="389.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm : " wrappingWidth="76.9738998413086">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

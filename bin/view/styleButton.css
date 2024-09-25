@@ -1,0 +1,37 @@
+/* Quy tắc CSS cho nút "Sửa" */
+.edit-button {
+    -fx-background-color: #4CAF50; /* Màu xanh lá cây */
+}
+
+/* Quy tắc CSS cho nút "Xóa" */
+.delete-button {
+    -fx-background-color: #f44336; /* Màu đỏ */
+}
+
+/* Hiệu ứng khi di chuột qua nút "Sửa" */
+.edit-button:hover {
+    -fx-background-color: #66bb6a; /* Màu xanh lá cây nhạt hơn */
+}
+Button {
+    -fx-cursor: hand; /* Con trỏ chuột dạng bàn tay */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 3, 3); /* Hiệu ứng đổ bóng */
+
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 2;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 5, 5);
+    -fx-transition: background-color 0.3s, scale 0.3s; /* Hiệu ứng chuyển đổi màu và kích thước */
+}
+/* Hiệu ứng khi di chuột qua nút "Xóa" */
+.delete-button:hover {
+    -fx-background-color: #e57373; /* Màu đỏ nhạt hơn */
+}
+Button:hover {
+    -fx-background-color: #ff6f61;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

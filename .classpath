@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-20">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.base.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.controls.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.fxml.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.graphics.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.media.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.swing.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx.web.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/openjfx-22_windows-x64_bin-sdk/javafx-sdk-22/lib/javafx-swt.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/jaxb-ri-2.3.1.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/sqljdbc/sqljdbc_6.0/enu/jre8/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/Downloads/jaxb-ri-2.3.1/jaxb-ri/mod/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/OneDrive/Documents/vscode/java/libriajava/sqljdbc_12.6/enu/jars/mssql-jdbc-12.6.1.jre8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/OneDrive/Documents/vscode/java/libriajava/sqljdbc_12.6/enu/jars/mssql-jdbc-12.6.1.jre8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/OneDrive/Documents/vscode/java/libriajava/sqljdbc_12.6/enu/jars/mssql-jdbc-12.6.1.jre8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/OneDrive/Documents/vscode/java/libriajava/sqljdbc_12.6/enu/jars/mssql-jdbc-12.6.1.jre11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/OneDrive/Documents/vscode/java/libriajava/sqljdbc_12.6/enu/jars/mssql-jdbc-12.6.1.jre11-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Huy Trung/OneDrive/Documents/vscode/java/libriajava/sqljdbc_12.6/enu/jars/mssql-jdbc-12.6.1.jre11-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

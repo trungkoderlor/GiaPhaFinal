@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="850.0" style="-fx-border-color: grey;" stylesheets="@styleFormtest.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerAddForm">
+   <children>
+      <TextField fx:id="txt_name" layoutX="158.0" layoutY="115.0" prefWidth="170.0" />
+      <Label layoutX="496.0" layoutY="248.0" text="Mẹ :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="300.0" text="Bố :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="248.0" text="Giới Tính :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="192.0" text="Năm Sinh :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="119.0" text="Họ Và Tên :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="461.0" layoutY="300.0" text="Vợ/Chồng :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="465.0" layoutY="192.0" text="Link Ảnh :">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txt_link" layoutX="552.0" layoutY="188.0" prefWidth="170.0" style="-fx-border-color-top: red;" text="file:\" />
+      <ChoiceBox fx:id="choiceBoxBo" layoutX="159.0" layoutY="296.0" prefWidth="170.0" />
+      <ChoiceBox fx:id="choiceBoxMe" layoutX="552.0" layoutY="244.0" prefWidth="170.0" />
+      <ChoiceBox fx:id="choiceBoxVC" layoutX="552.0" layoutY="296.0" prefWidth="170.0" />
+      <ChoiceBox fx:id="choiceBoxGT" layoutX="159.0" layoutY="244.0" prefWidth="170.0" />
+      <Spinner fx:id="spinerNameSinh" layoutX="159.0" layoutY="188.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button fx:id="outbtn" layoutX="750.0" layoutY="1.0" mnemonicParsing="false" onAction="#outclick" text="Trở Về" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="431.0" prefHeight="402.0" prefWidth="5.0" style="-fx-background-color: grey;" />
+      <Pane layoutX="562.0" prefHeight="161.0" prefWidth="136.0" style="-fx-border-color: black;">
+         <children>
+            <ImageView fx:id="avatar" fitHeight="150.0" fitWidth="126.0" layoutX="5.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="no_img" layoutX="30.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="không có ảnh" />
+         </children>
+      </Pane>
+      <Button fx:id="confirmbtn" layoutX="368.0" layoutY="343.0" mnemonicParsing="false" onAction="#confirmclick" prefHeight="25.0" prefWidth="126.0" text="Xác Nhận" />
+      <Pane layoutY="398.0" prefHeight="6.0" prefWidth="850.0" style="-fx-background-color: grey;" />
+      <Text layoutX="102.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm Thành Viên" underline="true">
+         <font>
+            <Font name="Candara Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="chamthan" fill="#e72929" layoutX="727.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="16.000020345052064">
+         <font>
+            <Font name="Times New Roman" size="29.0" />
+         </font>
+      </Text>
+      <Text fx:id="note" fill="#220f0f" layoutX="656.0" layoutY="183.0" opacity="0.77" strokeType="OUTSIDE" strokeWidth="0.0" text="Lưu ý : Đường dẫn có dạng file:\..." visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

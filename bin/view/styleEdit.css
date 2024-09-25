@@ -1,0 +1,33 @@
+/* Bố cục tổng quan */
+AnchorPane {
+    -fx-background-color: #FFFAB7; /* Màu nền nhạt */
+}
+
+/* Nút (Button) */
+Button {
+    -fx-background-color: #3498db; /* Màu nền xanh dương */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-border-radius: 10; /* Bo góc tròn */
+    -fx-background-radius: 10; /* Bo tròn nền */
+    -fx-padding: 10 10; /* Khoảng đệm trong nút */
+    -fx-font-size: 14; /* Kích thước chữ */
+    -fx-cursor: hand; /* Con trỏ chuột dạng bàn tay */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 3, 3); /* Hiệu ứng đổ bóng */
+}
+
+/* Nút khi chuột qua */
+Button:hover {
+    -fx-background-color: #e74c3c; /* Màu nền đỏ tươi khi chuột qua */
+}
+
+/* Các thành phần đầu vào (TextField, ChoiceBox, Spinner) */
+Pane{
+	 -fx-background-color: linear-gradient(to right,#3498db, #377D22);
+}
+
+/* Tiêu đề (Text) */
+Text {
+    -fx-font-size: 35; /* Kích thước chữ lớn */
+    -fx-font-weight: bold; /* Chữ đậm */
+    -fx-fill: #2c3e50; /* Màu chữ xám đậm */
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" stylesheets="@styleEdit.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerDiagram">
+   <children>
+    <AnchorPane layoutY="91.0" minHeight="0.0" minWidth="0.0" prefHeight="552.0" prefWidth="850.0" style="-fx-background-color: red;" stylesheets="@styleHome.css">
+         <children>
+            <ScrollPane prefHeight="552.0" prefWidth="850.0" style="-fx-background-color: #651FFF;">
+               <content>
+                  <Canvas fx:id="canvas" height="1200.0" width="1200.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="outbtn" contentDisplay="CENTER" layoutX="755.0" layoutY="7.0" mnemonicParsing="false" onAction="#outclick" prefHeight="35.0" prefWidth="81.0" stylesheets="@styleButton.css" text="Trở Về">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <font>
+            <Font name="Candara Italic" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="296.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sơ Đồ Gia Phả" wrappingWidth="215.999989827474">
+         <font>
+            <Font name="Candara Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Polyline fill="#ebebeb" layoutX="401.0" layoutY="85.0" points="83.99996948242188, -25.16666030883789, 83.99996948242188, -25.16666030883789, 10.000030517578125, 2.666667938232422, -72.66665649414062, -25.166667938232422" strokeType="INSIDE" />
+      <Line endX="178.6666259765625" endY="-10.66666030883789" layoutX="349.0" layoutY="71.0" startX="-81.99996948242188" startY="-10.66666030883789" />
+   </children>
+</Pane>

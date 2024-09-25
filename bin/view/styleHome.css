@@ -1,0 +1,11 @@
+AnchorPane {
+    -fx-background-color: #f0f4f8;
+}
+
+/* Hiệu ứng chuyển màu (gradient) cho AnchorPane */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #f0f4f8, #d0e4f9);
+}
+Pane{
+	-fx-background-color: linear-gradient(to bottom, #f0f4f8, #d0e4f9);
+}
